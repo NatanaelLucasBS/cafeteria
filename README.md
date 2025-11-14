@@ -9,33 +9,33 @@ A aplicação funciona como uma **SPA**, consumindo dados via API REST e simulan
 
 A aplicação permite:
 
-- Listar cafés via API
-- Adicionar itens ao carrinho
-- Editar quantidades
-- Finalizar compra com validação
-- Persistir dados via localStorage
+- Listar cafés via API  
+- Adicionar itens ao carrinho  
+- Editar quantidades  
+- Finalizar compra com validação  
+- Persistir dados via localStorage  
 
 ---
 
 ## 📌 Funcionalidades
 
 ### 🏠 Página Inicial
-- Listagem dinâmica de produtos
-- Cards com descrição, preço e imagem
-- Botão de compra
-- Interface responsiva
+- Listagem dinâmica de produtos  
+- Cards com descrição, preço e imagem  
+- Botão de compra  
+- Interface responsiva  
 
 ### 🛒 Carrinho
-- Adição e remoção de itens
-- Controle de quantidades
-- Cálculo automático do total
-- Persistência em localStorage
+- Adição e remoção de itens  
+- Controle de quantidades  
+- Cálculo automático do total  
+- Persistência em localStorage  
 
 ### 📦 Checkout
-- Formulário de dados de entrega
-- Seleção de método de pagamento
-- Validação de campos
-- Confirmação da compra
+- Formulário de dados de entrega  
+- Seleção de método de pagamento  
+- Validação de campos  
+- Confirmação da compra  
 
 ---
 
@@ -44,36 +44,31 @@ A aplicação permite:
 **Frontend**
 - HTML5  
 - CSS3  
-- JavaScript ES6+
+- JavaScript ES6+  
 
 **Backend Simulado**
 - JSON Server  
-- LocalStorage
+- LocalStorage  
 
 ---
 
 ## 📁 Estrutura do Projeto
 
+```txt
 projeto-cafe/
-│── index.html # Página principal
-│── style.css # Estilos da aplicação
-│── script.js # Lógica JavaScript
-└── db.json # API simulada (JSON Server)
+│── index.html        # Página principal
+│── style.css         # Estilos da aplicação
+│── script.js         # Lógica JavaScript
+└── db.json           # API simulada (JSON Server)
+⚙️ Como Executar
+1. Pré-requisitos
+Node.js
 
-yaml
+NPM ou Yarn
+
+2. Instalar JSON Server
+bash
 Copiar código
-
----
-
-## ⚙️ Como Executar
-
-### 1. Pré-requisitos
-- Node.js  
-- NPM ou Yarn
-
-### 2. Instalar JSON Server
-
-```bash
 npm install json-server
 3. Iniciar o servidor da API
 bash
@@ -130,7 +125,7 @@ Navegação fluida
 
 Interface responsiva
 
-Feedback visual para ações do usuário
+Feedback visual imediato
 
 Design inspirado em cafeterias
 
