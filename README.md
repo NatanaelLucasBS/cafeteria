@@ -1,84 +1,100 @@
-Loja de Café - Sistema de E-commerce
-Descrição do Projeto
-Sistema de e-commerce desenvolvido para uma loja de cafés especiais, implementado com JavaScript puro para manipulação do DOM. O projeto consiste em uma aplicação web de página única (SPA) que simula um ambiente de compras online completo.
+Aqui está um README técnico, claro e bonito, pronto para ser colocado no GitHub. Mantive linguagem profissional, organizada e direta — ideal para portfólio.
 
-Funcionalidades Principais
+Loja de Café – Sistema de E-commerce
+
+Este projeto é um sistema de e-commerce desenvolvido para uma loja de cafés especiais. A aplicação utiliza JavaScript puro para manipulação do DOM e simula um ambiente completo de compras, desde a listagem de produtos até a finalização do pedido.
+
+Descrição Geral
+
+A aplicação segue o modelo de SPA (Single Page Application), com carregamento dinâmico de dados obtidos via API REST. O usuário pode navegar pelos produtos, adicionar itens ao carrinho, revisar a compra e concluir o pedido com dados de entrega.
+
+Funcionalidades
 Página Inicial
-Listagem dinâmica de produtos obtidos via API REST
 
-Exibição de cards com informações completas dos cafés
+Listagem dinâmica de produtos via API REST
 
-Sistema de adição de produtos ao carrinho
+Exibição de cards contendo nome, descrição, imagem e preço
 
-Interface responsiva e intuitiva
+Adição de produtos ao carrinho
 
-Gerenciamento de Carrinho
-Adição e remoção de produtos
+Interface responsiva e organizada
 
-Controle de quantidades
+Carrinho
 
-Cálculo automático do total
+Adição e remoção de itens
 
-Persistência de dados via Web Storage API
+Controle de quantidade
 
-Processo de Finalização
-Formulário de dados de entrega
+Cálculo automático do valor total
+
+Persistência via Web Storage API (localStorage)
+
+Checkout
+
+Formulário de entrega
 
 Seleção de método de pagamento
 
 Validação de campos obrigatórios
 
-Confirmação visual da compra
+Tela de confirmação da compra
 
 Tecnologias Utilizadas
 Frontend
-HTML5 - Estrutura semântica
 
-CSS3 - Estilização e layout responsivo
+HTML5 – Estrutura semântica
 
-JavaScript ES6+ - Lógica de aplicação e manipulação do DOM
+CSS3 – Layout responsivo e estilização
+
+JavaScript ES6+ – Lógica da aplicação e manipulação do DOM
 
 Backend Simulado
-JSON Server - API REST local para simulação de backend
 
-LocalStorage - Persistência de dados do carrinho
+JSON Server – Simulação de API REST local
+
+LocalStorage – Persistência do carrinho
 
 Estrutura do Projeto
-text
 projeto-cafe/
-├── index.html          # Página principal
-├── style.css           # Estilos da aplicação
-├── script.js           # Lógica JavaScript
-└── db.json            # Dados da API (JSON Server)
-Configuração e Execução
+├── index.html       # Página principal
+├── style.css        # Estilos da aplicação
+├── script.js        # Lógica de interação e DOM
+└── db.json          # Dados da API utilizada pelo JSON Server
+
+Como Executar
 Pré-requisitos
+
 Node.js instalado
 
-NPM ou Yarn como gerenciador de pacotes
+NPM ou Yarn
 
-Instalação e Execução
-Instalar dependências:
+Instalação
 
-bash
+Instalar o JSON Server:
+
 npm install json-server
-Iniciar servidor da API:
 
-bash
+Iniciar servidor da API
 npx json-server db.json --port 3000
-Acessar a aplicação:
 
-Abrir index.html em um servidor web local
 
-A API estará disponível em: http://localhost:3000/coffee
+A API ficará disponível em:
 
-API Endpoints
+http://localhost:3000/coffee
+
+Executar a aplicação
+
+Abra o arquivo index.html utilizando um servidor web local
+(Ex.: Live Server, http-server, etc.)
+
+API – Endpoints
 Cafés
-GET /coffee - Lista todos os cafés disponíveis
 
-GET /coffee/{id} - Obtém um café específico
+GET /coffee — Lista todos os cafés
 
-Estrutura dos Dados
-json
+GET /coffee/{id} — Retorna um café específico
+
+Formato dos Dados
 {
   "id": 1,
   "title": "Nome do Café",
@@ -87,55 +103,40 @@ json
   "image": "URL da imagem",
   "ingredients": ["ingrediente1", "ingrediente2"]
 }
-Funcionalidades Técnicas
+
+Principais Recursos Técnicos
 Manipulação do DOM
-Criação dinâmica de elementos
 
-Gerenciamento de eventos
+Renderização dinâmica da lista de produtos
 
-Atualização em tempo real da interface
+Atualização do carrinho em tempo real
+
+Tratamento de eventos para botões e formulários
 
 Gerenciamento de Estado
-Armazenamento local do carrinho
 
-Sincronização entre componentes
+Controle do carrinho no localStorage
 
-Persistência de sessão
+Sincronização entre UI e dados persistidos
+
+Atualização automática de valores e quantidades
 
 Validações
+
 Campos obrigatórios no checkout
 
-Controle de quantidades
+Controle de valores mínimos e máximos
 
-Feedback visual para o usuário
+Mensagens de feedback visual
 
-Características de Desenvolvimento
-Código modular e organizado
+Boas Práticas Aplicadas
+
+Código organizado e modular
 
 Separação de responsabilidades
 
-Tratamento de erros
+Tratamento básico de erros
 
-Interface responsiva
+Zero dependências externas de JavaScript
 
-Sem dependências externas de JavaScript
-
-Considerações de UX/UI
-Navegação intuitiva entre seções
-
-Feedback visual imediato das ações
-
-Design coerente com o tema de cafeteria
-
-Experiência mobile-friendly
-
-Próximas Melhorias
-Implementação de busca e filtros
-
-Sistema de avaliação de produtos
-
-Histórico de pedidos
-
-Integração com gateway de pagamento real
-
-Sistema de autenticação de usuários
+Interface responsiva e consistente com tema de cafeteria
