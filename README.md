@@ -1,100 +1,93 @@
-Aqui está um README técnico, claro e bonito, pronto para ser colocado no GitHub. Mantive linguagem profissional, organizada e direta — ideal para portfólio.
+☕ Loja de Café – Sistema de E-commerce
 
-Loja de Café – Sistema de E-commerce
+Sistema de e-commerce desenvolvido para uma loja de cafés especiais, utilizando HTML5, CSS3 e JavaScript puro.
+A aplicação funciona como uma SPA (Single Page Application), carregando produtos via API REST e permitindo a simulação completa de uma compra online.
 
-Este projeto é um sistema de e-commerce desenvolvido para uma loja de cafés especiais. A aplicação utiliza JavaScript puro para manipulação do DOM e simula um ambiente completo de compras, desde a listagem de produtos até a finalização do pedido.
+🚀 Visão Geral
 
-Descrição Geral
+A aplicação permite ao usuário navegar pelos produtos, adicionar itens ao carrinho, editar quantidades e finalizar a compra com preenchimento de dados de entrega e pagamento.
+Todo o estado do carrinho é salvo no localStorage, garantindo persistência entre sessões.
 
-A aplicação segue o modelo de SPA (Single Page Application), com carregamento dinâmico de dados obtidos via API REST. O usuário pode navegar pelos produtos, adicionar itens ao carrinho, revisar a compra e concluir o pedido com dados de entrega.
+📌 Funcionalidades
+🏠 Página Inicial
 
-Funcionalidades
-Página Inicial
+Listagem dinâmica de produtos consumidos da API
 
-Listagem dinâmica de produtos via API REST
+Cards com foto, descrição, preço e ingredientes
 
-Exibição de cards contendo nome, descrição, imagem e preço
+Botão de compra integrado
 
-Adição de produtos ao carrinho
+Layout responsivo
 
-Interface responsiva e organizada
+🛒 Carrinho
 
-Carrinho
+Adicionar e remover produtos
 
-Adição e remoção de itens
+Atualização automática de quantidades
 
-Controle de quantidade
+Cálculo do subtotal e total
 
-Cálculo automático do valor total
+Persistência via Web Storage API
 
-Persistência via Web Storage API (localStorage)
+📦 Finalização da Compra
 
-Checkout
+Formulário validado de endereço e pagamento
 
-Formulário de entrega
+Verificação de campos obrigatórios
 
-Seleção de método de pagamento
+Tela de confirmação do pedido
 
-Validação de campos obrigatórios
-
-Tela de confirmação da compra
-
-Tecnologias Utilizadas
+🛠 Tecnologias Utilizadas
 Frontend
 
-HTML5 – Estrutura semântica
+HTML5
 
-CSS3 – Layout responsivo e estilização
+CSS3
 
-JavaScript ES6+ – Lógica da aplicação e manipulação do DOM
+JavaScript ES6+
 
 Backend Simulado
 
-JSON Server – Simulação de API REST local
+JSON Server – Simulação de API REST
 
 LocalStorage – Persistência do carrinho
 
-Estrutura do Projeto
+📁 Estrutura do Projeto
 projeto-cafe/
-├── index.html       # Página principal
-├── style.css        # Estilos da aplicação
-├── script.js        # Lógica de interação e DOM
-└── db.json          # Dados da API utilizada pelo JSON Server
+│── index.html        # Página principal
+│── style.css         # Estilos gerais
+│── script.js         # Lógica da aplicação
+└── db.json           # Base de dados usada pelo JSON Server
 
-Como Executar
-Pré-requisitos
+⚙️ Como Executar
+1. Pré-requisitos
 
-Node.js instalado
+Node.js
 
 NPM ou Yarn
 
-Instalação
-
-Instalar o JSON Server:
-
+2. Instalar o JSON Server
 npm install json-server
 
-Iniciar servidor da API
+3. Iniciar o servidor da API
 npx json-server db.json --port 3000
 
 
-A API ficará disponível em:
+API disponível em:
 
 http://localhost:3000/coffee
 
-Executar a aplicação
+4. Rodar a aplicação
 
-Abra o arquivo index.html utilizando um servidor web local
-(Ex.: Live Server, http-server, etc.)
+Abra o arquivo index.html usando um servidor local
+(ex.: Live Server, http-server).
 
-API – Endpoints
+📡 Endpoints da API
 Cafés
+GET /coffee
+GET /coffee/{id}
 
-GET /coffee — Lista todos os cafés
-
-GET /coffee/{id} — Retorna um café específico
-
-Formato dos Dados
+Modelo de Dados
 {
   "id": 1,
   "title": "Nome do Café",
@@ -104,39 +97,47 @@ Formato dos Dados
   "ingredients": ["ingrediente1", "ingrediente2"]
 }
 
-Principais Recursos Técnicos
+🔧 Recursos Técnicos Implementados
 Manipulação do DOM
 
-Renderização dinâmica da lista de produtos
+Renderização dinâmica
 
-Atualização do carrinho em tempo real
+Eventos de clique
 
-Tratamento de eventos para botões e formulários
+Atualização em tempo real da interface
 
 Gerenciamento de Estado
 
-Controle do carrinho no localStorage
+Carrinho salvo no localStorage
 
-Sincronização entre UI e dados persistidos
+Sincronização automática com a interface
 
-Atualização automática de valores e quantidades
+Validação
 
-Validações
+Formulário de checkout
 
-Campos obrigatórios no checkout
-
-Controle de valores mínimos e máximos
+Regras de negócio para quantidades
 
 Mensagens de feedback visual
 
-Boas Práticas Aplicadas
+🎨 Design e Experiência
 
-Código organizado e modular
+Navegação intuitiva
 
-Separação de responsabilidades
+Responsividade total
 
-Tratamento básico de erros
+Tema visual inspirado em cafeterias
 
-Zero dependências externas de JavaScript
+Feedback visual para todas as ações
 
-Interface responsiva e consistente com tema de cafeteria
+📈 Possíveis Melhorias Futuras
+
+Busca e filtros avançados
+
+Sistema de avaliações
+
+Cadastro e login de usuários
+
+Histórico de pedidos
+
+Integração com gateway de pagamento real
